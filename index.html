@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shachin N | B.Tech CSE student</title>
+  <meta name="description" content="Portfolio of Shachin N, first-year B.Tech Computer Science and Engineering student at Lovely Professional University.">
+
+  <!-- Fonts: if they fail to load, the browser uses the fallback fonts below -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Colours live here. Change a value once and it updates everywhere. */
+    :root {
+      --bg: #F2F5F9;
+      --ink: #16202E;
+      --muted: #556171;
+      --line: #CFD8E3;
+      --accent: #0F766E;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 4rem 1.25rem 5rem;
+    }
+
+    h1, h2 {
+      font-family: "Bricolage Grotesque", system-ui, sans-serif;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 9vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.35rem;
+      color: var(--muted);
+      max-width: 34rem;
+      margin: 0.75rem 0 1.5rem;
+    }
+
+    /* The small "code" line under the intro */
+    .hello {
+      display: inline-block;
+      margin: 0 0 1.75rem;
+      padding: 0.6rem 1rem;
+      background: var(--ink);
+      color: #E6EDF5;
+      border-left: 4px solid var(--accent);
+      border-radius: 4px;
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 1rem;
+    }
+
+    section {
+      margin-top: 2.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--line);
+    }
+
+    a { color: var(--accent); text-underline-offset: 0.2em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-weight: 600;
+    }
+
+    /* Skills: one row per group */
+    .skills { margin: 0; }
+    .skills div {
+      display: grid;
+      grid-template-columns: 9rem 1fr;
+      gap: 0.25rem 1rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .skills dt { font-weight: 600; }
+    .skills dd { margin: 0; color: var(--muted); }
+
+    /* Education: a timeline, because it really is in order */
+    .timeline {
+      margin: 0;
+      padding: 0 0 0 1.25rem;
+      list-style: none;
+      border-left: 3px solid var(--accent);
+    }
+    .timeline li { margin-bottom: 1.5rem; }
+    .timeline li:last-child { margin-bottom: 0; }
+    .timeline strong { display: block; }
+    .timeline span { color: var(--muted); }
+
+    @media (max-width: 32rem) {
+      .skills div { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Shachin N</h1>
+      <p class="tagline">First-year B.Tech student in Computer Science and Engineering, learning to build software.</p>
+      <code class="hello">print("Hello, I am Shachin")</code>
+      <ul class="links">
+        <li><a href="https://github.com/Shachin1110">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/shachin-n-5536a5423">LinkedIn</a></li>
+        <li><a href="mailto:shachin11102009@gmail.com">Email</a></li>
+      </ul>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I study Computer Science and Engineering at Lovely Professional University. I am learning to code from the basics, starting with Python and web development, and I want to grow into a software developer role.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Python (basics), HTML, CSS, JavaScript (fundamentals)</dd></div>
+        <div><dt>Tools</dt><dd>Git and GitHub, VS Code</dd></div>
+        <div><dt>Soft skills</dt><dd>Problem solving, communication, teamwork, time management</dd></div>
+      </dl>
+    </section>
+
+    <section id="certificate">
+      <h2>Certificate</h2>
+      <!-- TODO: replace the # below with your HackerRank certificate link -->
+      <p>Python (Basic), HackerRank, September 2026. <a href="#">View certificate</a></p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <strong>B.Tech, Computer Science and Engineering</strong>
+          <span>Lovely Professional University, Sep 2026 to present</span>
+        </li>
+        <li>
+          <strong>Class 12</strong>
+          <span>Royal International School, Namakkal, Tamil Nadu, 2025 to 2026, 79.6%</span>
+        </li>
+        <li>
+          <strong>Class 10</strong>
+          <span>Royal International School, Namakkal, Tamil Nadu, 2023 to 2024, 80.4%</span>
+        </li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
